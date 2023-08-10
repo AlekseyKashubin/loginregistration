@@ -87,7 +87,7 @@ public class HomeController : Controller
     }
 
 
-    [HttpPost("logout")]
+    [HttpGet("logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
